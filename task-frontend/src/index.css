@@ -1,0 +1,105 @@
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg,#020617,#020617,#000);
+  color:white;
+}
+
+/* Layout */
+.dashboard{
+  display:flex;
+  height:100vh;
+}
+
+/* Sidebar */
+.sidebar{
+  width:220px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  padding:20px;
+  border-right:1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar h2{
+  margin-bottom:30px;
+}
+
+.menu{
+  margin:15px 0;
+  color:#aaa;
+  cursor:pointer;
+}
+
+/* Main */
+.main{
+  flex:1;
+  padding:40px;
+}
+
+/* Header */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:40px;
+}
+
+.addBox{
+  display:flex;
+  gap:10px;
+}
+
+.addBox input{
+  padding:12px;
+  width:220px;
+  border:none;
+  border-radius:8px;
+  outline:none;
+}
+
+.addBox button{
+  padding:12px 20px;
+  background:#22c55e;
+  border:none;
+  border-radius:8px;
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+/* Cards */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card{
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.5);
+}
+
+.cardBtns{
+  margin-top:15px;
+  display:flex;
+  gap:10px;
+}
+
+.complete{
+  background:#16a34a;
+  border:none;
+  padding:8px 12px;
+  color:white;
+  border-radius:6px;
+}
+
+.delete{
+  background:red;
+  border:none;
+  padding:8px 12px;
+  color:white;
+  border-radius:6px;
+}
